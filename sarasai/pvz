@@ -1,0 +1,8 @@
+def ar_dalinasi_is_7( x ):
+    return x % 7 == 0
+atrinkti_skaiciai = list( filter( ar_dalinasi_is_7, skaiciai ))
+atrinkti_skaiciai = list( filter( lambda x: x % 7 == 0, skaiciai ))
+atrinkti_skaiciai = [ x for x in skaiciai if x % 7 == 0 ]
+print( atrinkti_skaiciai )
+
+
