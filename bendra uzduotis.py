@@ -21,7 +21,7 @@ for question in questions:
 
 # sukuriam tkinter ekrana
 window = tk.Tk()
-window.geometry('800x600')
+window.geometry('500x300')
 window.title('Trivia')
 
 # apibreziu  globalius kintamuosius
