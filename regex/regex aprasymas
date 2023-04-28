@@ -1,0 +1,43 @@
+Pagrindinės "re" modulio funkcijos:
+
+search(): Ieškoti pirmo pasitaikančio reguliariųjų išraiškų atitikmens tekste.
+findall(): Grąžina visus reguliariųjų išraiškų atitikmenis tekste sąraše.
+sub(): Pakeičia visus reguliariųjų išraiškų atitikmenis tekste naujais simboliais.
+split(): Padalina tekstą į sąrašą pagal reguliarias išraiškas.
+
+Pavyzdys:
+
+python
+Copy code
+import re
+
+# Ieškoti žodžio "spam" tekste
+text = "Eggs, bacon, and spam"
+match = re.search("spam", text)
+if match:
+    print("Atradome atitikmenį:", match.group())
+
+# Rasti visus skaičius tekste
+text = "I have 3 apples and 2 bananas"
+numbers = re.findall("\d+", text)
+print(numbers)
+
+# Pakeisti žodžius tekste
+text = "The cat in the hat"
+new_text = re.sub("cat", "dog", text)
+print(new_text)
+
+# Padalinti tekstą į sąrašą
+text = "apple,banana,orange"
+fruits = re.split(",", text)
+print(fruits)
+
+Šio pavyzdžio išeities tekstas yra apdorojamas reguliariųjų
+išraiškų pagalba. Pirma, ieškome pirmo pasitaikančio "spam"
+žodžio tekste ir išvedame rezultatą. Tada naudojame "findall()"
+funkciją, kad surastume visus skaičius tekste ir išvestume sąrašą.
+Toliau naudojame "sub()" funkciją, kad pakeistume "cat" žodį
+"dog" žodžiu tekste. Galiausiai naudojame "split()" funkciją, kad
+padalintume tekstą į sąrašą, kuriame kiekvienas elementas yra
+vaisių pavadinimas, atskirtas kableliais.
+

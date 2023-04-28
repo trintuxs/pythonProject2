@@ -67,13 +67,14 @@ import re
 # print(res)
 # print(res2)
 
-tekstas = 'Jonas Jonaitis +370 622 01234'
-pattern = re.compile(r'''
-                    [A-Z]\w+              # vardas
-                    \s                    # tarpas
-                    [a-z]\w+              # pavardė
-                    \s                    # tarpas
-                    \+370\s6\d{2}\s\d{5}  # telefono numeris
-                    ''', re.X | re.I)
-res = pattern.findall(tekstas)
-print(res)
+# tekstas = 'Jonas Jonaitis +370 622 01234'
+# pattern = re.compile(r'''
+#                     [A-Z]\w+              # vardas
+#                     \s                    # tarpas
+#                     [a-z]\w+              # pavardė
+#                     \s                    # tarpas
+#                     \+370\s6\d{2}\s\d{5}  # telefono numeris
+#                     ''', re.X | re.I)
+# res = pattern.findall(tekstas)
+# print(res)
+

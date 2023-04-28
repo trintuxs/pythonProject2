@@ -1,0 +1,3 @@
+2023-04-24 19:04:06,892 DEBUG [loginimas line 41] : zmogus pasirinko 1
+2023-04-24 19:04:12,292 CRITICAL [loginimas line 48] : zmogus ivede raide ne skaiciu
+2023-04-24 19:12:52,286 DEBUG [loginimas line 41] : zmogus pasirinko 1
